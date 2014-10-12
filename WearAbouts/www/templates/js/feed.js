@@ -7,19 +7,6 @@ $(document).ready(function() {
 	}
 
 	$("#camera_button").click(function() {
-		var base64image;
-		navigator.camera.getPicture(
-			function(imageData) {
-				base64image = imageData;
-			},
-			function(message){
-				alert("Something went wrong. Camera could not be opened");
-			},
-			{}
-		);
-
-		var imageBase64 = base64image.replace(/^data:image\/(png|jpeg);base64,/, "");
-		var parseFile = new Parse.File(fileName, {base64:imageBase64});
 		window.location.replace("camera.html");
 	});
 
