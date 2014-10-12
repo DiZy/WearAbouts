@@ -22,8 +22,28 @@ width:100%;
 
 }
 
+.loginbutton{
+color:white;
+background-color:#DE1F12;
+margin-bottom: 10px;
+width:40%;
+padding-top:10px;
+padding-bottom:10px;
+border-radius: 10px;
+border: 1px solid white;
+}
 
 
+.loginbutton{
+color:white;
+background-color:#DE1F12;
+margin-bottom: 10px;
+width:100%;
+padding-top:10px;
+padding-bottom:10px;
+border-radius: 10px;
+border: 1px solid white;
+}
 
 
 #logincontainer {
