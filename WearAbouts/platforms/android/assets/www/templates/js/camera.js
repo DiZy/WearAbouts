@@ -19,19 +19,20 @@ $(document).ready(function() {
 	     var dataURL = c.toDataURL("image/jpeg");
 	     return dataURL;
 	}
-
 	var parseFile1;
 	$("#camera_shot1").click(function() {
 		navigator.camera.getPicture(
 			function(imageData) {
-				document.getElementById('pic1').src = encodeImageUri(imageData);
-    			//var imageBase64 = imageData.replace(/^data:image\/(png|jpeg);base64,/, "");
-    			parseFile1 = new Parse.File("UploadOne", {base64:encodeImageUri(imageData)});
+				document.getElementById('pic1').src = 'data:image/jpeg;base64,' + imageData;
+
+
+    			var imageBase64 = imageData.replace(/^data:image\/(png|jpeg);base64,/, "");
+    			parseFile1 = new Parse.File("UploadOne", {base64:imageBase64});
 			},
 			function(message){
 				alert("Something went wrong. Camera could not be opened.");
 			},
-			{DestinationType:Camera.DestinationType.FILE_URI}
+			{destinationType:Camera.DestinationType.DATA_URL}
 		);
 		
 		
@@ -42,9 +43,10 @@ $(document).ready(function() {
 	$("#camera_shot2").click(function() {
 		navigator.camera.getPicture(
 			function(imageData) {
-				document.getElementById('pic2').src = encodeImageUri(imageData);
-    			//var imageBase64 = imageData.replace(/^data:image\/(png|jpeg);base64,/, "");
-    			parseFile2 = new Parse.File("UploadTwo", {base64:encodeImageUri(imageData)});
+				document.getElementById('pic2').src = 'data:image/jpeg;base64,' + imageData;
+
+    			var imageBase64 = imageData.replace(/^data:image\/(png|jpeg);base64,/, "");
+    			parseFile1 = new Parse.File("UploadTwo", {base64:imageBase64});
 			},
 			function(message){
 				alert("Something went wrong. Camera could not be opened");

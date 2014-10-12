@@ -272,3 +272,9 @@ button {
 	background-color:red;
 	width:40%;
 }
+#pic1{
+	max-height:14em;
+}
+#pic2{
+	max-height:14em;
+}
