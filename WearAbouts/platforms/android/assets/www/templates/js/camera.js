@@ -19,7 +19,6 @@ $(document).ready(function() {
 	     var dataURL = c.toDataURL("image/jpeg");
 	     return dataURL;
 	}
-	user = Parse.User;
 
 	var parseFile1;
 	$("#camera_shot1").click(function() {
@@ -59,7 +58,8 @@ $(document).ready(function() {
 	$("#picture_submit").click(function() {
 		parseFile1.save().then(function() {
 			parseFile2.save().then(function() {
-				user.increment("upload_number");
+				var curcount = user.get("upload_number");
+				user.set("upload_number", curcount+1);
 				user.set("picture_pair" + user.get("upload_number").toString() + "a", parseFile1);
 				user.set("picture_pair" + user.get("upload_number").toString() + "b", parseFile2);
 				user.save();
