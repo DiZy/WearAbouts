@@ -7,7 +7,7 @@ $(document).ready(function() {
   }
 
   $("#login").click(function() {
-    Parse.User.logIn($('.username').val(), $('.password').val(), {
+    Parse.User.logIn($('#username').val(), $('#password').val(), {
       success: function(user) {
         window.location.replace("feed.html");
       },

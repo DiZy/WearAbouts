@@ -2,10 +2,9 @@ $(document).ready(function() {
   Parse.initialize("MSEW9txqvEpGiAAWRTDGEkwkW2hdkdcWSG7i9hAR", "5Zbv70ZN4wBylpDB0R6w50R8gT4BJYBiXBWOfsAM");
 
   $("#signup").click(function() {
-    console.log("hello");
     var user = new Parse.User();
-    user.set("username", $('.username').val());
-    user.set("password", $('.password').val());
+    user.set("username", $('#username').val());
+    user.set("password", $('#password').val());
     user.set("email", $('#email').val());
     user.set("upload_number", 0);
     user.pinInBackground();
