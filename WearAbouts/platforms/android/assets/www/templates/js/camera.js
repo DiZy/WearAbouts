@@ -26,7 +26,7 @@ $(document).ready(function() {
 			function(imageData) {
 				document.getElementById('pic1').src = encodeImageUri(imageData);
     			//var imageBase64 = imageData.replace(/^data:image\/(png|jpeg);base64,/, "");
-    			parseFile1 = new Parse.File("UploadOne", {base64:imageData});
+    			parseFile1 = new Parse.File("UploadOne", {base64:encodeImageUri(imageData)});
 			},
 			function(message){
 				alert("Something went wrong. Camera could not be opened.");
@@ -44,12 +44,12 @@ $(document).ready(function() {
 			function(imageData) {
 				document.getElementById('pic2').src = encodeImageUri(imageData);
     			//var imageBase64 = imageData.replace(/^data:image\/(png|jpeg);base64,/, "");
-    			parseFile2 = new Parse.File("UploadTwo", {base64:imageData});
+    			parseFile2 = new Parse.File("UploadTwo", {base64:encodeImageUri(imageData)});
 			},
 			function(message){
 				alert("Something went wrong. Camera could not be opened");
 			},
-			{DestinationType:Camera.DestinationType.DATA_URL}
+			{DestinationType:Camera.DestinationType.FILE_URI}
 		);
 		
 		$('#camera_text2').text('Picture Taken');
@@ -59,6 +59,7 @@ $(document).ready(function() {
 		parseFile1.save().then(function() {
 			parseFile2.save().then(function() {
 				var curcount = user.get("upload_number");
+				if(!curcount){curcount = 0}
 				user.set("upload_number", curcount+1);
 				user.set("picture_pair" + user.get("upload_number").toString() + "a", parseFile1);
 				user.set("picture_pair" + user.get("upload_number").toString() + "b", parseFile2);
