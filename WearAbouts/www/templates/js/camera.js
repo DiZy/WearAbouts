@@ -6,7 +6,7 @@ $(document).ready(function() {
 	  window.location.replace("login.html");
 	}
 
-	$("#camera_button").click(function() {
+	$(".camera_shot").click(function() {
 		var base64image;
 		navigator.camera.getPicture(
 			function(imageData) {
@@ -15,12 +15,11 @@ $(document).ready(function() {
 			function(message){
 				alert("Something went wrong. Camera could not be opened");
 			},
-			{}
+			[{}]
 		);
 
 		var imageBase64 = base64image.replace(/^data:image\/(png|jpeg);base64,/, "");
 		var parseFile = new Parse.File(fileName, {base64:imageBase64});
-		window.location.replace("camera.html");
 	});
 
 	$("#feed_button").click(function() {
