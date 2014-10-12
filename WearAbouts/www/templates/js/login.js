@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  alert("hi");
   Parse.initialize("MSEW9txqvEpGiAAWRTDGEkwkW2hdkdcWSG7i9hAR", "5Zbv70ZN4wBylpDB0R6w50R8gT4BJYBiXBWOfsAM");
 
   var currentUser = Parse.User.current();
