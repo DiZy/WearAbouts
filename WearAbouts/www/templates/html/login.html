@@ -13,17 +13,25 @@
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="../js/login.js"></script>
   <script type="text/javascript" src="../../cordova.js"></script>
+  <link rel="stylesheet" href="../css/custom.css">
 </head>
 <body>
   
-  <div id="logincontainer">
-    <h1>WearAbouts</h1>
-    <form>
-      Username: <input type="text" class="username"><br>
-      Password: <input type="password" class="password">
-    </form>
-    <button id="login" type="submit">Log in</button>
-    <button id="signup" type="button" onclick="location.href = 'signup.html';">Sign up</button>
-  </div>
+<div id="logincontainer">
+    <div id="logintitle"><h1>WearAbouts</h1></div>
+   
+  
+      <div class="container">
+
+      <form class="form-signin" role="form">
+        <div class="signinline"> <h2 class="form-signin-heading">Please sign in</h2> </div>
+        <div class="signinline"><input type="text" class="form-control" placeholder="Username" required autofocus></div>
+        <div class="signinline"><input type="password" class="form-control" placeholder="Password" required></div>
+        <div class="signinline"> <button id="login" class="btn btn-lg btn-primary btn-block" type="submit">Log in</button> 
+		<button id="signup" type="button" onclick="location.href = 'signup.html';">Sign up</button></div>
+      </form>
+
+    </div> <!-- /container -->
+</div>
 </body>
 </html>
