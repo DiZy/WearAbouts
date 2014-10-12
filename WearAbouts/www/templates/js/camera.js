@@ -1,10 +1,12 @@
 $(document).ready(function() {
 	Parse.initialize("MSEW9txqvEpGiAAWRTDGEkwkW2hdkdcWSG7i9hAR", "5Zbv70ZN4wBylpDB0R6w50R8gT4BJYBiXBWOfsAM");
 
-	var currentUser = Parse.User.current();
-	if (!currentUser) {
+	var user = Parse.User.current();
+	if (!user) {
 	  window.location.replace("login.html");
 	}
+
+	user = Parse.User;
 
 	var parseFile1;
 	$("#camera_shot1").click(function() {
@@ -51,7 +53,7 @@ $(document).ready(function() {
 				user.set("picture_pair" + user.get("upload_number").toString() + "a", parseFile1);
 				user.set("picture_pair" + user.get("upload_number").toString() + "b", parseFile2);
 				user.save();
-				window.location.replace("feed.html");
+				window.location.replace("stats.html");
 			}, function(error) {
 			  	alert("Something went wrong. Please try again.")
 			});
