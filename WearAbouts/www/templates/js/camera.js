@@ -15,7 +15,7 @@ $(document).ready(function() {
 			function(message){
 				alert("Something went wrong. Camera could not be opened");
 			},
-			[{}]
+			{}
 		);
 
 		var imageBase64 = base64image.replace(/^data:image\/(png|jpeg);base64,/, "");
