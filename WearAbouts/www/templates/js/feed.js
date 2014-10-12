@@ -19,4 +19,10 @@ $(document).ready(function() {
 		var currentUser = Parse.User.current();
 		window.location.replace("login.html");
 	});
+
+
+	var userList = Parse.Query(Parse.User);
+	var randomIndex = Math.random() * userList.length;
+	console.log(userList[randomIndex]);
+
 });
