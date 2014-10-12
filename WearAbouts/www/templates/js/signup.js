@@ -10,7 +10,7 @@ $(document).ready(function() {
       
     user.signUp(null, {
       success: function(user) {
-        window.location.replace("../html/profile.html");
+        window.location.replace("feed.html");
       },
       error: function(user, error) {
         // Show the error message somewhere and let the user try again.

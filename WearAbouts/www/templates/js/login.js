@@ -3,13 +3,13 @@ $(document).ready(function() {
 
   var currentUser = Parse.User.current();
   if (currentUser) {
-      window.location.replace("profile.html");
+      window.location.replace("feed.html");
   }
 
   $("#login").click(function() {
     Parse.User.logIn($('.username').val(), $('.password').val(), {
       success: function(user) {
-        window.location.replace("../html/profile.html");
+        window.location.replace("feed.html");
       },
       error: function(user, error) {
         // The login failed. Check error to see why.
