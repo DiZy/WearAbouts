@@ -21,7 +21,7 @@ $(document).ready(function() {
 	});
 
 	var query = new Parse.Query(Parse.User);
-	var random_user = Parse.User;
+	var random_user = Parse.User.current();
 	function random_user_post() {
 		query.exists("picture_pair1a");
 		query.find({
@@ -31,8 +31,9 @@ $(document).ready(function() {
 		    random_user = userList[randomIndex];
 			var first_picture = random_user.get("picture_pair1a");
 			var second_picture = random_user.get("picture_pair1b");
-			$("pic")[0].src = first_picture.url();
-			$("pic")[0].src = second_picture.url();
+			console.log(first_picture.url());
+			document.getElementById("pic1").src = first_picture.url();
+			document.getElementById("pic2").src = second_picture.url();
 		  },
 		  error: function(error) {
 		    alert("Error: " + error.code + " " + error.message);
