@@ -1,41 +1,115 @@
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\ant-build\HelloCordova.ap_ \
- : C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\res\drawable\icon.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\res\drawable-hdpi\icon.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\res\drawable-land-hdpi\screen.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\res\drawable-land-ldpi\screen.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\res\drawable-land-mdpi\screen.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\res\drawable-land-xhdpi\screen.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\res\drawable-ldpi\icon.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\res\drawable-mdpi\icon.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\res\drawable-port-hdpi\screen.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\res\drawable-port-ldpi\screen.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\res\drawable-port-mdpi\screen.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\res\drawable-port-xhdpi\screen.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\res\drawable-xhdpi\icon.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\res\values\strings.xml \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\res\xml\config.xml \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\ant-build\res\drawable\icon.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\ant-build\res\drawable-hdpi\icon.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\ant-build\res\drawable-land-hdpi\screen.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\ant-build\res\drawable-land-ldpi\screen.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\ant-build\res\drawable-land-mdpi\screen.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\ant-build\res\drawable-land-xhdpi\screen.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\ant-build\res\drawable-ldpi\icon.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\ant-build\res\drawable-mdpi\icon.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\ant-build\res\drawable-port-hdpi\screen.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\ant-build\res\drawable-port-ldpi\screen.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\ant-build\res\drawable-port-mdpi\screen.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\ant-build\res\drawable-port-xhdpi\screen.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\ant-build\res\drawable-xhdpi\icon.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\assets\www \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\assets\_where-is-www.txt \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\assets\www\cordova.js \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\assets\www\cordova_plugins.js \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\assets\www\css \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\assets\www\img \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\assets\www\index.html \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\assets\www\js \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\assets\www\css\index.css \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\assets\www\img\logo.png \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\assets\www\js\index.js \
-C:\Users\David Zilburg\Documents\wearabouts\WearAbouts\platforms\android\ant-build\AndroidManifest.xml \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\ant-build\HelloCordova.ap_ \
+ : C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\res\drawable\icon.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\res\drawable-hdpi\icon.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\res\drawable-land-hdpi\screen.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\res\drawable-land-ldpi\screen.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\res\drawable-land-mdpi\screen.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\res\drawable-land-xhdpi\screen.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\res\drawable-ldpi\icon.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\res\drawable-mdpi\icon.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\res\drawable-port-hdpi\screen.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\res\drawable-port-ldpi\screen.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\res\drawable-port-mdpi\screen.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\res\drawable-port-xhdpi\screen.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\res\drawable-xhdpi\icon.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\res\values\strings.xml \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\res\xml\config.xml \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\ant-build\res\drawable\icon.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\ant-build\res\drawable-hdpi\icon.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\ant-build\res\drawable-land-hdpi\screen.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\ant-build\res\drawable-land-ldpi\screen.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\ant-build\res\drawable-land-mdpi\screen.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\ant-build\res\drawable-land-xhdpi\screen.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\ant-build\res\drawable-ldpi\icon.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\ant-build\res\drawable-mdpi\icon.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\ant-build\res\drawable-port-hdpi\screen.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\ant-build\res\drawable-port-ldpi\screen.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\ant-build\res\drawable-port-mdpi\screen.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\ant-build\res\drawable-port-xhdpi\screen.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\ant-build\res\drawable-xhdpi\icon.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\_where-is-www.txt \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\cordova.js \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\cordova_plugins.js \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\css \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\img \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\index.html \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\js \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\plugins \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\css\index.css \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\img\logo.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\js\index.js \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\plugins\org.apache.cordova.camera \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\plugins\org.apache.cordova.camera\www \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\Camera.js \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\CameraConstants.js \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\CameraPopoverHandle.js \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\css \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0 \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\fonts \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\Head.png \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\html \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\js \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\css\bootstrap.css \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\css\bootstrap.min.css \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\css\custom.css \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\css\reset.css \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\css\simple-sidebar.css \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\css\styles.css \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\css \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\fonts \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\less \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\scss \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\css\font-awesome.css \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\css\font-awesome.min.css \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\fonts\fontawesome-webfont.eot \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\fonts\fontawesome-webfont.svg \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\fonts\fontawesome-webfont.ttf \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\fonts\fontawesome-webfont.woff \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\fonts\FontAwesome.otf \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\less\bordered-pulled.less \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\less\core.less \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\less\fixed-width.less \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\less\font-awesome.less \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\less\icons.less \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\less\larger.less \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\less\list.less \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\less\mixins.less \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\less\path.less \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\less\rotated-flipped.less \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\less\spinning.less \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\less\stacked.less \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\less\variables.less \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\scss\font-awesome.scss \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\scss\_bordered-pulled.scss \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\scss\_core.scss \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\scss\_fixed-width.scss \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\scss\_icons.scss \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\scss\_larger.scss \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\scss\_list.scss \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\scss\_mixins.scss \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\scss\_path.scss \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\scss\_rotated-flipped.scss \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\scss\_spinning.scss \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\scss\_stacked.scss \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\font-awesome-4.2.0\scss\_variables.scss \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\fonts\glyphicons-halflings-regular.eot \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\fonts\glyphicons-halflings-regular.svg \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\fonts\glyphicons-halflings-regular.ttf \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\fonts\glyphicons-halflings-regular.woff \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\html\camera.html \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\html\feed.html \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\html\login.html \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\html\signup.html \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\html\stats.html \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\js\bootstrap.js \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\js\bootstrap.min.js \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\js\camera.js \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\js\feed.js \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\js\jquery-1.11.0.js \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\js\login.js \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\js\signup.js \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\assets\www\templates\js\stats.js \
+C:\Users\Karl\Documents\WearAbouts\WearAbouts\platforms\android\ant-build\AndroidManifest.xml \
