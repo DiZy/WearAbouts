@@ -21,10 +21,9 @@ $(document).ready(function() {
 	});
 
 	var query = new Parse.Query(Parse.User);
-	var random_user;
+	var random_user = Parse.User;
 	function random_user_post() {
-		alert("hello");
-		query.exists("username");
+		query.exists("picture_pair1a");
 		query.find({
 		  success: function(results) {
 		  	var userList = results;
@@ -34,7 +33,6 @@ $(document).ready(function() {
 			var second_picture = random_user.get("picture_pair1b");
 			$("#pic1").src = first_picture.url();
 			$("#pic2").src = second_picture.url();
-			alert(random_user.get("username"));
 		  },
 		  error: function(error) {
 		    alert("Error: " + error.code + " " + error.message);
@@ -55,5 +53,5 @@ $(document).ready(function() {
 	});
 	$("#neither").click(function() {
 		random_user_post();
-	}
+	});
 });
