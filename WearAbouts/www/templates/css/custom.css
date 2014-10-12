@@ -19,6 +19,44 @@ font-size: 300%;
 width:100%;
 }
 
+#neither{
+width:100%;
+height:8%;
+background-color:#3D352A; 
+position:realtive;
+color:white;
+font-weight:bold;
+border: 1px solid #3D352A;
+}
+
+#pic1{
+width:100%;
+height:40%;
+overflow: hidden;
+background-color:whtie; 
+position:realtive;
+float:center;
+color:#DE1F12;
+font-weight:bold;
+
+
+}
+
+#pic2{
+width:100%;
+height:40%;
+overflow: hidden;
+background-color:whtie; 
+position:realtive;
+float:center;
+color:#DE1F12;
+font-weight:bold;
+}
+
+
+
+
+
 .loginbutton{
 color:white;
 background-color:#DE1F12;
