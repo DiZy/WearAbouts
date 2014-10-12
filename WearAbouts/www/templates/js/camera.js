@@ -6,6 +6,7 @@ $(document).ready(function() {
 	  window.location.replace("login.html");
 	}
 
+	var parseFile1;
 	$("#camera_shot1").click(function() {
 		var base64image;
 		navigator.camera.getPicture(
@@ -13,17 +14,18 @@ $(document).ready(function() {
 				base64image = imageData;
 			},
 			function(message){
-				alert("Something went wrong. Camera could not be opened");
+				alert("Something went wrong. Camera could not be opened.");
 			},
 			{}
 		);
 
 		var imageBase64 = base64image.replace(/^data:image\/(png|jpeg);base64,/, "");
-		var parseFile = new Parse.File(fileName, {base64:imageBase64});
-
+		var parseFile1 = new Parse.File(fileName, {base64:imageBase64});
+		
 		document.getElementById("camera_shot1").innerHTML = "Picture 1 Taken";
 	});
 
+	var parseFile2;
 	$("#camera_shot2").click(function() {
 		var base64image;
 		navigator.camera.getPicture(
@@ -37,12 +39,26 @@ $(document).ready(function() {
 		);
 
 		var imageBase64 = base64image.replace(/^data:image\/(png|jpeg);base64,/, "");
-		var parseFile = new Parse.File(fileName, {base64:imageBase64});
-
-		document.getElementById("camera_shot2").innerHTML = "Picture 1 Taken";
+		var parseFile2 = new Parse.File(fileName, {base64:imageBase64});
+		
+		document.getElementById("camera_shot2").innerHTML = "Picture 2 Taken";
 	});
 
-
+	$("#picture_submit").click(function() {
+		parseFile1.save().then(function() {
+			parseFile2.save().then(function() {
+				user.increment("upload_number");
+				user.set("picture_pair" + user.get("upload_number").toString() + "a", parseFile1);
+				user.set("picture_pair" + user.get("upload_number").toString() + "b", parseFile2);
+				user.save();
+				window.location.replace("feed.html");
+			}, function(error) {
+			  	alert("Something went wrong. Please try again.")
+			});
+		}, function(error) {
+		  	alert("Something went wrong. Please try again.")
+		});
+	});
 
 
 	$("#feed_button").click(function() {
