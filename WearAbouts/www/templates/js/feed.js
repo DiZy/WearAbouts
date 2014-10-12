@@ -27,12 +27,12 @@ $(document).ready(function() {
 		query.find({
 		  success: function(results) {
 		  	var userList = results;
-		    var randomIndex = Math.round(Math.random() * userList.length);
+		    var randomIndex = Math.round(Math.random() * (userList.length - 1));
 		    random_user = userList[randomIndex];
 			var first_picture = random_user.get("picture_pair1a");
 			var second_picture = random_user.get("picture_pair1b");
-			$("#pic1").src = first_picture.url();
-			$("#pic2").src = second_picture.url();
+			$("pic")[0].src = first_picture.url();
+			$("pic")[0].src = second_picture.url();
 		  },
 		  error: function(error) {
 		    alert("Error: " + error.code + " " + error.message);
