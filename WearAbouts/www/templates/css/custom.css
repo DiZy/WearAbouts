@@ -22,35 +22,41 @@ width:100%;
 #neither{
 width:100%;
 height:8%;
-background-color:#3D352A; 
+background-color:#DE1F12; 
 position:realtive;
 color:white;
 font-weight:bold;
-border: 1px solid #3D352A;
+border: 1px solid #DE1F12;
+
+margin-top:2em;
+margin-bottom:2em;
 }
 
 #pic1{
 width:100%;
-height:40%;
+max-height:14em;
 overflow: hidden;
 background-color:whtie; 
 position:realtive;
 float:center;
 color:#DE1F12;
 font-weight:bold;
-
-
+margin-top:15px;
+border-bottom:2px solid #DE1F12 ;
+border-top:2px solid #DE1F12 ;
 }
 
 #pic2{
 width:100%;
-height:40%;
+max-height:14em;
 overflow: hidden;
 background-color:whtie; 
 position:realtive;
 float:center;
 color:#DE1F12;
 font-weight:bold;
+border-bottom:2px solid #DE1F12 ;
+border-top:2px solid #DE1F12 ;
 }
 
 
@@ -327,9 +333,11 @@ button {
 	background-color:red;
 	width:40%;
 }
-#pic1{
+
+
+/* #pic1{
 	max-height:14em;
 }
 #pic2{
 	max-height:14em;
-}
+}*/
