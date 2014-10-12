@@ -20,9 +20,39 @@ $(document).ready(function() {
 		window.location.replace("login.html");
 	});
 
+	var query = new Parse.Query(Parse.User);
+	var random_user = Parse.User.current();
+	function random_user_post() {
+		query.exists("picture_pair1a");
+		query.find({
+		  success: function(results) {
+		  	var userList = results;
+		    var randomIndex = Math.round(Math.random() * (userList.length - 1));
+		    random_user = userList[randomIndex];
+			var first_picture = random_user.get("picture_pair1a");
+			var second_picture = random_user.get("picture_pair1b");
+			console.log(first_picture.url());
+			document.getElementById("pic1").src = first_picture.url();
+			document.getElementById("pic2").src = second_picture.url();
+		  },
+		  error: function(error) {
+		    alert("Error: " + error.code + " " + error.message);
+		  }
+		});
+	}
 
-	var userList = Parse.Query(Parse.User);
-	var randomIndex = Math.random() * userList.length;
-	console.log(userList[randomIndex]);
-
+	random_user_post();
+	$("#pic1").click(function() {
+		random_user.set("vote_a", random_user.get("vote_a") + 1);
+		random_user.save();
+		random_user_post();
+	});
+	$("#pic2").click(function() {
+		random_user.set("vote_b", random_user.get("vote_b") + 1);
+		random_user.save();
+		random_user_post();
+	});
+	$("#neither").click(function() {
+		random_user_post();
+	});
 });

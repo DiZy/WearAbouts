@@ -5,22 +5,16 @@ $(document).ready(function() {
 	if (!user) {
 	  window.location.replace("login.html");
 	}
+	$('#count1').text("Current count for picture 1: " + user.get("vote_a"));
+	$('#count2').text("Current count for picture 2: " + user.get("vote_b"));
+	var first_picture = user.get("picture_pair1a");
+	var second_picture = user.get("picture_pair1b");
+	document.getElementById("pic1").src = first_picture.url();
+	document.getElementById("pic2").src = second_picture.url();
 
 	var decrementer = 0;
 	var picture1 = user.get("picture_pair" + user.get("upload_number").toString() + 'a');
 	var picture2 = user.get("picture_pair" + user.get("upload_number").toString() + 'b');
-	$("display")[0].src = picture1.url();
-	$("display")[1].src = picture2.url();
-
-	$("#next_number").click(function() {
-		if (decrement < user.get("upload_number")) {
-			++decrementer;
-			picture1 = user.get("picture_pair" + (user.get(upload_number) - decrementer).toString() + 'a');
-			picture2 = user.get("picture_pair" + (user.get(upload_number) - decrementer).toString() + 'b');
-			$("display")[0].src = picture1.url();
-			$("display")[1].src = picture2.url();
-		}
-	});
 
 	$("#camera_button").click(function() {
 		console.log("hi");

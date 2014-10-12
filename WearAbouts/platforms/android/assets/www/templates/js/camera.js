@@ -60,11 +60,9 @@ $(document).ready(function() {
 	$("#picture_submit").click(function() {
 		parseFile1.save().then(function() {
 			parseFile2.save().then(function() {
-				var curcount = user.get("upload_number");
-				if(!curcount){curcount = 0}
-				user.set("upload_number", curcount+1);
-				user.set("picture_pair" + user.get("upload_number").toString() + "a", parseFile1);
-				user.set("picture_pair" + user.get("upload_number").toString() + "b", parseFile2);
+				user.set("upload_number", 1);
+				user.set("picture_pair" + "1a", parseFile1);
+				user.set("picture_pair" + "1b", parseFile2);
 				user.save();
 				window.location.replace("stats.html");
 			}, function(error) {

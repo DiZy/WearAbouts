@@ -7,6 +7,8 @@ $(document).ready(function() {
     user.set("password", $('#password').val());
     user.set("email", $('#email').val());
     user.set("upload_number", 0);
+    user.set("vote_a", 0);
+    user.set("vote_b", 0);
     user.pinInBackground();
       
     user.signUp(null, {
