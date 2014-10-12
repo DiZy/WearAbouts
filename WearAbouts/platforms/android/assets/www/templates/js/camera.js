@@ -45,8 +45,8 @@ $(document).ready(function() {
 			function(imageData) {
 				document.getElementById('pic2').src = 'data:image/jpeg;base64,' + imageData;
 
-    			var imageBase64 = imageData.replace(/^data:image\/(png|jpeg);base64,/, "");
-    			parseFile1 = new Parse.File("UploadTwo", {base64:imageBase64});
+    			var imageBase642 = imageData.replace(/^data:image\/(png|jpeg);base64,/, "");
+    			parseFile2 = new Parse.File("UploadTwo", {base64:imageBase642});
 			},
 			function(message){
 				alert("Something went wrong. Camera could not be opened");

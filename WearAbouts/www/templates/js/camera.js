@@ -51,7 +51,7 @@ $(document).ready(function() {
 			function(message){
 				alert("Something went wrong. Camera could not be opened");
 			},
-			{DestinationType:Camera.DestinationType.FILE_URI}
+			{destinationType:Camera.DestinationType.DATA_URL}
 		);
 		
 		$('#camera_text2').text('Picture Taken');
