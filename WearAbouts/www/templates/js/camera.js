@@ -6,7 +6,7 @@ $(document).ready(function() {
 	  window.location.replace("login.html");
 	}
 
-	$(".camera_shot").click(function() {
+	$("#camera_shot1").click(function() {
 		var base64image;
 		navigator.camera.getPicture(
 			function(imageData) {
@@ -20,7 +20,30 @@ $(document).ready(function() {
 
 		var imageBase64 = base64image.replace(/^data:image\/(png|jpeg);base64,/, "");
 		var parseFile = new Parse.File(fileName, {base64:imageBase64});
+
+		document.getElementById("camera_shot1").innerHTML = "Picture 1 Taken";
 	});
+
+	$("#camera_shot2").click(function() {
+		var base64image;
+		navigator.camera.getPicture(
+			function(imageData) {
+				base64image = imageData;
+			},
+			function(message){
+				alert("Something went wrong. Camera could not be opened");
+			},
+			{}
+		);
+
+		var imageBase64 = base64image.replace(/^data:image\/(png|jpeg);base64,/, "");
+		var parseFile = new Parse.File(fileName, {base64:imageBase64});
+
+		document.getElementById("camera_shot2").innerHTML = "Picture 1 Taken";
+	});
+
+
+
 
 	$("#feed_button").click(function() {
 		window.location.replace("feed.html");
