@@ -4,9 +4,29 @@
 }
 
 
-#logintitle{
+#count1{
 color:#DE1F12;
 background-color: white;
+width:100%;
+font-family:Tahoma, Geneva, sans-serif;
+position:relative;
+font-size: 150%;
+
+}
+
+#count2{
+color:#DE1F12;
+background-color: white;
+width:100%;
+font-family:Tahoma, Geneva, sans-serif;
+position:relative;
+font-size: 150%;
+}
+
+
+#logintitle{
+color:white;
+background-color: #DE1F12;
 width:100%;
 font-family:Tahoma, Geneva, sans-serif;
 font-weight:900;
@@ -41,7 +61,7 @@ position:realtive;
 float:center;
 color:#DE1F12;
 font-weight:bold;
-margin-top:15px;
+margin-top:0px;
 border-bottom:2px solid #DE1F12 ;
 border-top:2px solid #DE1F12 ;
 }
