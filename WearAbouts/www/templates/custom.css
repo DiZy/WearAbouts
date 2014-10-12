@@ -8,7 +8,7 @@ body {
 	background-color: white;
 	margin-bottom: 0;
 	padding-bottom: 0;
-	color: #8e44ad;
+	color: white;
 }
 
 .topbar {
@@ -33,7 +33,7 @@ body {
 	display: block;
 	margin: auto;
 	border-radius: 0%;
-	border-bottom: 2px solid grey;
+	border-bottom: 2px solid white;
 	margin-bottom: 20px;
 }
 
@@ -90,7 +90,7 @@ body {
 }
 
 .framed-main-img {
-	border: 10px solid #8e44ad;
+	border: 10px solid white;
 }
 
 .image-below .user img {
@@ -123,16 +123,16 @@ body {
 }
 
 .navbar-element {
-	width: 33.3333333%;
+	width: 25%;
 	padding: 0;
 	margin: 0;
 	float: left;
-	background-color: #white;
+	background-color: white;
 	padding: none;
 	border-left: none;
 	border-bottom: none;
 	border-top: none;
-	border-right: 1px solid rgba(0,0,0,.5);
+	border-right: none;
 	height: 100%;
 	color: #DE1F12;
 }
