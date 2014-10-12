@@ -42,13 +42,13 @@ $(document).ready(function() {
 	}
 
 	random_user_post();
-	$("#picture1").click(function() {
-		random_user.set(random_user.get("vote_a") + 1);
+	$("#pic1").click(function() {
+		random_user.set("vote_a", random_user.get("vote_a") + 1);
 		random_user.save();
 		random_user_post();
 	});
-	$("#picture2").click(function() {
-		random_user.set(random_user.get("vote_b") + 1);
+	$("#pic2").click(function() {
+		random_user.set("vote_b", random_user.get("vote_b") + 1);
 		random_user.save();
 		random_user_post();
 	});
