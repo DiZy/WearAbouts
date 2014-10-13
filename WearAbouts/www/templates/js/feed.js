@@ -2,12 +2,18 @@ $(document).ready(function() {
 	Parse.initialize("MSEW9txqvEpGiAAWRTDGEkwkW2hdkdcWSG7i9hAR", "5Zbv70ZN4wBylpDB0R6w50R8gT4BJYBiXBWOfsAM");
 
 	var user = Parse.User.current();
+
 	if (!user) {
 	  window.location.replace("login.html");
 	}
+	user.fetch();
 
 	$("#camera_button").click(function() {
 		window.location.replace("camera.html");
+	});
+
+	$("#feed_button").click(function() {
+		window.location.replace("feed.html");
 	});
 
 	$("#stats_button").click(function() {
@@ -45,11 +51,13 @@ $(document).ready(function() {
 	$("#pic1").click(function() {
 		random_user.set("vote_a", random_user.get("vote_a") + 1);
 		random_user.save();
+		alert("Vote Counted");
 		random_user_post();
 	});
 	$("#pic2").click(function() {
 		random_user.set("vote_b", random_user.get("vote_b") + 1);
 		random_user.save();
+		alert("Vote Counted");
 		random_user_post();
 	});
 	$("#neither").click(function() {
