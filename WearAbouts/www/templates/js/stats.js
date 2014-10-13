@@ -5,6 +5,10 @@ $(document).ready(function() {
 	if (!user) {
 	  window.location.replace("login.html");
 	}
+	if(user.get("upload_number") == 0){
+		alert("No pictures uploaded!");
+		window.location.replace("feed.html");
+	}
 	user.fetch();
 	$('#count1').text("Current count for picture 1: " + user.get("vote_a"));
 	$('#count2').text("Current count for picture 2: " + user.get("vote_b"));
