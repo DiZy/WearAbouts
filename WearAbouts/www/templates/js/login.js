@@ -18,7 +18,7 @@ $(document).ready(function() {
     });
   });
 
-  $("#signup").click(function () {
+  $("#signup").click(function() {
       location.href = "signup.html";
   });
 });
