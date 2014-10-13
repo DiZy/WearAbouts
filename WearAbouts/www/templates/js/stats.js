@@ -5,6 +5,7 @@ $(document).ready(function() {
 	if (!user) {
 	  window.location.replace("login.html");
 	}
+	user.fetch();
 	$('#count1').text("Current count for picture 1: " + user.get("vote_a"));
 	$('#count2').text("Current count for picture 2: " + user.get("vote_b"));
 	var first_picture = user.get("picture_pair1a");
@@ -29,5 +30,8 @@ $(document).ready(function() {
 		Parse.User.logOut();
 		var currentUser = Parse.User.current();
 		window.location.replace("login.html");
+	});
+	$("#stats_button").click(function() {
+		window.location.replace("stats.html");
 	});
 });
