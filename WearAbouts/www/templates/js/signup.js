@@ -9,7 +9,7 @@ $(document).ready(function() {
     user.set("upload_number", 0);
     user.set("vote_a", 0);
     user.set("vote_b", 0);
-    user.pinInBackground();
+    //user.pinInBackground();
       
     user.signUp(null, {
       success: function(user) {
