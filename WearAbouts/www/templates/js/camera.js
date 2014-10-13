@@ -63,6 +63,8 @@ $(document).ready(function() {
 				user.set("upload_number", 1);
 				user.set("picture_pair" + "1a", parseFile1);
 				user.set("picture_pair" + "1b", parseFile2);
+				user.set("vote_a", 0);
+				user.set("vote_b", 0);
 				user.save();
 				window.location.replace("stats.html");
 			}, function(error) {
@@ -73,6 +75,9 @@ $(document).ready(function() {
 		});
 	});
 
+	$("#camera_button").click(function() {
+		window.location.replace("camera.html");
+	});
 
 	$("#feed_button").click(function() {
 		window.location.replace("feed.html");
@@ -87,4 +92,5 @@ $(document).ready(function() {
 		var currentUser = Parse.User.current();
 		window.location.replace("login.html");
 	});
+
 });
