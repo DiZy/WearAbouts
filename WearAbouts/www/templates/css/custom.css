@@ -63,7 +63,7 @@ font-weight:bold;
 margin-top:0px;
 border-bottom:2px solid #DE1F12 ;
 border-top:2px solid #DE1F12 ;
-
+cursor:pointer;
 }
 
 #pic1container{
@@ -83,7 +83,7 @@ color:#DE1F12;
 font-weight:bold;
 border-bottom:2px solid #DE1F12 ;
 border-top:2px solid #DE1F12 ;
-
+cursor:pointer;
 }
 
 #pic2container{
