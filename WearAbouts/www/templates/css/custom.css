@@ -63,6 +63,14 @@ font-weight:bold;
 margin-top:0px;
 border-bottom:2px solid #DE1F12 ;
 border-top:2px solid #DE1F12 ;
+
+}
+
+#pic1container{
+max-height:40%;
+overflow: hidden;
+width:100%;
+
 }
 
 #pic2{
@@ -75,9 +83,15 @@ color:#DE1F12;
 font-weight:bold;
 border-bottom:2px solid #DE1F12 ;
 border-top:2px solid #DE1F12 ;
+
 }
 
+#pic2container{
+max-height:40%;
+overflow: hidden;
+width:100%;
 
+}
 
 
 
