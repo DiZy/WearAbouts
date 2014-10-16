@@ -362,14 +362,57 @@ button {
 	color: white;	
 }
 .camera_shot{
-	background-color:red;
-	width:40%;
+	width:100%;
+	color: white;
+	padding: none;
+	border-left: none;
+	border-bottom: 2px solid #DE1F12;
+	border-top: 2px solid #DE1F12;
+	border-right: none;
+	font-size: 30px;
+	background-color: #DE1F12;
+	text-align: center;
+	font-weight: Bolder;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	
+}
+
+#camera_shot1{
+
+	margin-top: 5%;
+}
+
+#camera_shot2{
+
+	width:100%;
 }
 
 
+#picture_submit{
+color: #DE1F12;	
+width:100%;
+font-weight: Bolder;
+}
 /* #pic1{
 	max-height:14em;
 }
 #pic2{
 	max-height:14em;
 }*/
+
+
+#count1{
+margin-top:5%;
+color:#DE1F12;
+margin-left:auto;
+margin-right:auto;
+ font-weight:bold;
+}
+#count2{
+margin-top:5%;
+color:#DE1F12;
+margin-left:auto;
+margin-right:auto;
+ font-weight:bold;
+}
