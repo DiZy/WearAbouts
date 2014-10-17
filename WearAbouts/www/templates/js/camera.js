@@ -5,20 +5,6 @@ $(document).ready(function() {
 	if (!user) {
 	  window.location.replace("login.html");
 	}
-	function encodeImageUri(imageUri)
-	{
-	     var c=document.createElement('canvas');
-	     var ctx=c.getContext("2d");
-	     var img=new Image();
-	     img.onload = function(){
-	       c.width=this.width;
-	       c.height=this.height;
-	       ctx.drawImage(img, 0,0);
-	     };
-	     img.src=imageUri;
-	     var dataURL = c.toDataURL("image/jpeg");
-	     return dataURL;
-	}
 	var parseFile1;
 	$("#camera_shot1").click(function() {
 		navigator.camera.getPicture(
@@ -66,6 +52,44 @@ $(document).ready(function() {
 				user.set("vote_a", 0);
 				user.set("vote_b", 0);
 				user.save();
+
+
+				//delete old post count
+				var Post = Parse.Object.extend("Post");
+				Parse.Object.fetchAll([Post], {});
+				var query = new Parse.Query(Post);
+				query.equalTo("user", user.get("username"));
+				query.limit(1);
+				query.find({
+				  success: function(results) {
+		  			var post = results[0];
+		  			if(post){
+		  				post.set("count_a", 0);
+						post.set("count_b", 0);
+						post.save();
+		  			}
+				    else{
+						//create post
+						var Post = Parse.Object.extend("Post");
+						var post = new Post();
+						post.set("user", user.get("username"));
+						post.set("count_a", 0);
+						post.set("count_b", 0);
+						console.log(post);
+						post.save();
+				    }
+				  },
+				  error: function(error) {
+					//create post
+					var Post = Parse.Object.extend("Post");
+					var post = new Post();
+					post.set("user", user.get("username"));
+					post.set("count_a", 0);
+					post.set("count_b", 0);
+					console.log(post);
+					post.save();
+				  }
+				});
 				window.location.replace("stats.html");
 			}, function(error) {
 			  	alert("Something went wrong. Please try again.")

@@ -17,6 +17,22 @@ $(document).ready(function() {
 	document.getElementById("pic1").src = first_picture.url();
 	document.getElementById("pic2").src = second_picture.url();
 
+
+	//new code
+	var Post = Parse.Object.extend("Post");
+	var query = new Parse.Query(Post);
+	query.equalTo("user", user.get("username"));
+	query.find({
+	  success: function(results) {
+	  	var post = results[0];
+	    $('#count1').text("Current count for picture 1: " + post.get("count_a"));
+	    $('#count2').text("Current count for picture 2: " + post.get("count_b"));
+	  },
+	  error: function(error) {
+	    console.log("Error: " + error.code + " " + error.message);
+	  }
+	});
+
 	var decrementer = 0;
 	var picture1 = user.get("picture_pair" + user.get("upload_number").toString() + 'a');
 	var picture2 = user.get("picture_pair" + user.get("upload_number").toString() + 'b');

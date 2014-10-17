@@ -55,12 +55,46 @@ $(document).ready(function() {
 	$("#pic1").click(function() {
 		random_user.set("vote_a", random_user.get("vote_a") + 1);
 		random_user.save();
+
+		//new code
+		var Post = Parse.Object.extend("Post");
+		var query = new Parse.Query(Post);
+		query.equalTo("user", random_user.get("username"));
+		query.find({
+		  success: function(results) {
+		    console.log("Successfully retrieved " + results.length + " scores.");
+		    var post = results[0];
+		    post.set("count_a", post.get("count_a") + 1);
+		    post.save();
+		  },
+		  error: function(error) {
+		    console.log("Error: " + error.code + " " + error.message);
+		  }
+		});
+
 		alert("Vote Counted");
 		random_user_post();
 	});
 	$("#pic2").click(function() {
 		random_user.set("vote_b", random_user.get("vote_b") + 1);
 		random_user.save();
+
+		//new code
+		var Post = Parse.Object.extend("Post");
+		var query = new Parse.Query(Post);
+		query.equalTo("user", random_user.get("username"));
+		query.find({
+		  success: function(results) {
+		    console.log("Successfully retrieved " + results.length + " scores.");
+		    var post = results[0];
+		    post.set("count_b", post.get("count_b") + 1);
+		    post.save();
+		  },
+		  error: function(error) {
+		    console.log("Error: " + error.code + " " + error.message);
+		  }
+		});
+
 		alert("Vote Counted");
 		random_user_post();
 	});
