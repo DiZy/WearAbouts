@@ -1,6 +1,5 @@
 $(document).ready(function() {
 	Parse.initialize("MSEW9txqvEpGiAAWRTDGEkwkW2hdkdcWSG7i9hAR", "5Zbv70ZN4wBylpDB0R6w50R8gT4BJYBiXBWOfsAM");
-
 	var user = Parse.User.current();
 
 	if (!user) {
@@ -8,27 +7,11 @@ $(document).ready(function() {
 	}
 	user.fetch();
 
-	$("#camera_button").click(function() {
-		window.location.replace("camera.html");
-	});
-
-	$("#feed_button").click(function() {
-		window.location.replace("feed.html");
-	});
-
-	$("#stats_button").click(function() {
-		window.location.replace("stats.html");
-	});
-
-	$("#logout_button").click(function() {
-		Parse.User.logOut();
-		var currentUser = Parse.User.current();
-		window.location.replace("login.html");
-	});
-
 	var query = new Parse.Query(Parse.User);
 	var random_user = Parse.User.current();
 	function random_user_post() {
+		var spinner = new Spinner().spin();
+		document.body.appendChild(spinner.el);
 		query.exists("picture_pair1a");
 		query.find({
 		  success: function(results) {
@@ -36,6 +19,7 @@ $(document).ready(function() {
 		    var randomIndex = Math.round(Math.random() * (userList.length - 1));
 		    random_user = userList[randomIndex];
 		    if(random_user.get("username") == user.get("username")){
+		    	spinner.stop();
 		    	random_user_post();
 		    }else{
 		    	var first_picture = random_user.get("picture_pair1a");
@@ -43,6 +27,7 @@ $(document).ready(function() {
 				console.log(first_picture.url());
 				document.getElementById("pic1").src = first_picture.url();
 				document.getElementById("pic2").src = second_picture.url();
+				spinner.stop();
 		    }
 		  },
 		  error: function(error) {
